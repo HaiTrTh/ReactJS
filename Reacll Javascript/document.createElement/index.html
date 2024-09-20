@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h1 id="heading"> Hello guys! </h1> -->
+   <div id="root"></div>
+  <script>
+    // const h1 = document.querySelector("#heading")
+    // console.log(h1);
+    const h1 = document.createElement('h1');
+    h1.setAttribute("id", "heading");
+    //  h1.setAttribute("class", "hello what are you")
+     h1.className = "you must choose in fact, don't choose in ao tuong"
+    const root = document.getElementById("root");
+    h1.style.color = "red";
+    h1.innerText = "Hello guys!";
+    root.appendChild(h1);
+    console.log(h1);
+  </script>
+</body>
+</html>
