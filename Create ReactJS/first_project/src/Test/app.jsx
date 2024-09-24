@@ -15,6 +15,11 @@ export default function Profile(){
           height: user.imageSize
         }}
       />
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        alt={'Photo of ' + user.name }
+      />
     </>
   )
 }
